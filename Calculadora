@@ -14,5 +14,19 @@ def dividir(a, b):
     else:
         return "Error: División por cero"
 
+def dividir(a, b):
+    try:
+        return a / b
+    except ZeroDivisionError:
+        return "Error: División por cero"
+
+import math
+
+def raiz_cuadrada(a):
+    if a >= 0:
+        return math.sqrt(a)
+    else:
+        return "Error: Raíz cuadrada de un número negativo"
+
 if __name__ == "__main__":
     print("Calculadora Básica")
